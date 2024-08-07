@@ -1,11 +1,11 @@
-package com.jinwon.server.dto.request.response.auth;
+package com.jinwon.server.dto.response.auth;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import com.jinwon.server.common.ResponseCode;
 import com.jinwon.server.common.ResponseMessage;
-import com.jinwon.server.dto.request.response.ResponseDto;
+import com.jinwon.server.dto.response.ResponseDto;
 
 import lombok.Getter;
 
