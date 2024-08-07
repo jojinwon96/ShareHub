@@ -12,10 +12,11 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "baordFile")
-@Table(name="tbl_boardfiles")
+@Entity(name = "baord_file")
+@Table(name = "board_file")
 public class BoardFileEntity {
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int sequence;
 
   private int boardNumber;

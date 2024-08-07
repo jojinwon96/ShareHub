@@ -1,4 +1,4 @@
-package com.jinwon.server.dto.request.response;
+package com.jinwon.server.dto.response;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
