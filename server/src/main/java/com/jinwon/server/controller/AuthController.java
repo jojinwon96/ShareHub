@@ -7,8 +7,10 @@ import com.jinwon.server.service.AuthService;
 
 import jakarta.validation.Valid;
 
+import com.jinwon.server.dto.request.auth.SignInRequestDto;
 import com.jinwon.server.dto.request.auth.SignUpRequestDto;
 import com.jinwon.server.dto.response.auth.SignUpResponseDto;
+import com.jinwon.server.dto.response.auth.SignInResponseDto;
 
 import lombok.RequiredArgsConstructor;
 
@@ -29,5 +31,12 @@ public class AuthController {
         ResponseEntity<? super SignUpResponseDto> response = authService.signUp(requestBody);
         return response;
     }
+
+    @PostMapping("/sign-in")
+    public ResponseEntity<? super SignInResponseDto> signIn(@RequestBody @Valid SignInRequestDto requestBody){
+        ResponseEntity<? super SignInResponseDto> response = authService.signIn(requestBody);
+        return response;
+    }
+    
     
 }

@@ -1,0 +1,66 @@
+.gap10{
+  gap: 10px;
+}
+
+.inputbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  .inputbox-label {
+    font-family: Ubuntu;
+    font-weight: 700;
+    color: #fff;
+  }
+  .inputbox-container {
+    border: 1px solid #fff;
+    input {
+      border: none;
+      width: 332px;
+      height: 24px;
+      padding: 8px 16px;
+      background: rgba(244, 244, 244, 0);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      &::placeholder{
+        color: #fff;
+      }
+    }
+  }
+  .inputbox-message {
+    font-family: Ubuntu;
+    font-weight: 700;
+    color: #eb5757;
+  }
+
+  .input-error {
+    border: 1px solid #eb5757;
+  }
+  .buttonbox {
+    display: flex;
+    gap: 5%;
+    p{
+      color: #fff;
+    }
+    input {
+      color: #fff;
+      border: 1px solid #fff;
+      width: 75%;
+      height: 24px;
+      padding: 8px 16px;
+      background: rgba(244, 244, 244, 0);
+    }
+    button {
+      width: 20%;
+      height: 36px;
+      padding: 6px;
+      font-size: 14px;
+      color: #fff;
+      background: var(--primary1, #1e90ff);
+      border: 1px solid #1e90ff;
+    }
+  }
+
+}
+

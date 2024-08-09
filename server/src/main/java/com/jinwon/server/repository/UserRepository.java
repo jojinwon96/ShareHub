@@ -9,4 +9,6 @@ import com.jinwon.server.entity.UserEntity;
 public interface UserRepository extends JpaRepository<UserEntity, String> {
     boolean existsByEmail(String email);
     boolean existsByNickname(String nickname);
+
+    UserEntity findByEmail(String email);
 }
